@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'century-reg';
-    src: url(/assets/fonts/SansSerifFLF.otf);
+    src: url(../fonts/SansSerifFLF.otf);
 }
 
 @font-face {
     font-family: 'century-light';
-    src: url(/assets/fonts/SansSerifBookFLF.otf);
+    src: url(/fonts/SansSerifBookFLF.otf);
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     height: 100vh;
     width: 100%;
     font-family: 'century-reg', Arial, Helvetica, sans-serif;
-    background-image: url('/assets/img/background-mobile-login.jpg');
+    background-image: url('../img/background-mobile-login.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,11 +84,11 @@ main {
 }
 
 .form--id {
-    background-image: url(/assets/img/account.svg);
+    background-image: url(../img/account.svg);
 }
 
 .form--pwd {
-    background-image: url(/assets/img/lock.svg);
+    background-image: url(../img/lock.svg);
 }
 
 .btn {
@@ -155,5 +155,11 @@ main {
     .form--id,
     .form--pwd {
         width: 35vw;
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        display: none;
     }
 }
