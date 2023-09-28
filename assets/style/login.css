@@ -1,0 +1,127 @@
+/* Login Page CSS */
+
+@font-face {
+    font-family: 'century-reg';
+    src: url(/assets/fonts/SansSerifFLF.otf);
+}
+
+@font-face {
+    font-family: 'century-light';
+    src: url(/assets/fonts/SansSerifBookFLF.otf);
+}
+
+body {
+    background-color: #e4e4e4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'century-reg', Arial, Helvetica, sans-serif;
+}
+
+/* Header Logo and Text */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+.header--logo {
+    width: 60vw;
+    height: auto;
+    padding: 1rem;
+
+}
+
+.header--title {
+    text-align: center;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+/* MAIN */
+
+main {
+    height: 65vh;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Login Form */
+
+.section--form {
+    height: 30vh;
+    padding: 1rem;
+}
+
+.login--form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form--id,
+.form--pwd {
+    background-color: #D6D6D6;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: 5%;
+    background-size: 30px 30px;
+    text-indent: 2rem;
+    margin: 0.8rem auto 0.8rem auto;
+}
+
+.form--id {
+background-image: url(/assets/img/account.svg);
+}
+
+.form--pwd {
+    background-image: url(/assets/img/lock.svg);
+}
+
+.btn {
+    padding: 0.5rem;
+    border-radius: 8px;
+    background-color: #B2CE3C;
+    border: none;
+    box-shadow: 0px 2px 4px;
+}
+
+/* Recovery Links */
+
+.section--recovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+.recovery--lnk {
+    text-decoration: none;
+    color: black;
+}
+
+/* Links Section */
+
+.section--lnk {
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
