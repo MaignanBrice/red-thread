@@ -11,7 +11,6 @@
 }
 
 body {
-    background-color: #e4e4e4;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -19,6 +18,10 @@ body {
     height: 100vh;
     width: 100%;
     font-family: 'century-reg', Arial, Helvetica, sans-serif;
+    background-image: url('/assets/img/background-mobile-login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Header Logo and Text */
@@ -28,8 +31,8 @@ header {
     flex-direction: column;
     align-items: center;
     height: 35vh;
-    padding: 1rem;
     padding-top: 2rem;
+    width: 100%;
 }
 
 .header--logo {
@@ -50,7 +53,6 @@ header {
 main {
     height: 65vh;
     width: 100%;
-    padding: 1rem;
 }
 
 /* Login Form */
@@ -82,7 +84,7 @@ main {
 }
 
 .form--id {
-background-image: url(/assets/img/account.svg);
+    background-image: url(/assets/img/account.svg);
 }
 
 .form--pwd {
@@ -92,7 +94,7 @@ background-image: url(/assets/img/account.svg);
 .btn {
     padding: 0.5rem;
     border-radius: 8px;
-    background-color: #B2CE3C;
+    background-color: #B2CE3C ;
     border: none;
     box-shadow: 0px 2px 4px;
 }
@@ -102,10 +104,11 @@ background-image: url(/assets/img/account.svg);
 .section--recovery {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 10vh;
-    width: 100%;
+    width: auto;
+    padding: 1rem;
 }
 
 .recovery--lnk {
@@ -116,7 +119,7 @@ background-image: url(/assets/img/account.svg);
 /* Links Section */
 
 .section--lnk {
-    height: 15vh;
+    height: 10vh;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -124,4 +127,33 @@ background-image: url(/assets/img/account.svg);
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+
+
+/* Responsive */
+
+@media (min-width: 496px) {
+    .header--logo {
+        width: 50vw;
+        height: auto;
+    }
+
+    .form--id,
+    .form--pwd {
+        width: 40vw;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .header--logo {
+        width: 40vw;
+        height: auto;
+    }
+
+    .form--id,
+    .form--pwd {
+        width: 35vw;
+    }
 }
