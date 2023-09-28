@@ -14,21 +14,31 @@
 
 <body>
 
-    <main>
-        <div class='mobile--header'>
-            <div class='mobile--burger'>
-                <img src="assets/img/menu.svg" alt="burger menu">
-            </div>
-            <div class="mobile--title">
-                Accueil
-            </div>
-            <div class="mobile--info">
-                <img src="assets/img/information.svg" alt="infomation question mark">
-            </div>
+    <header>
+        <div class='header--mobile'>
+            <img id="menubars" class='header--menubar' src='assets/img/menu.svg' alt="">
+            <h1 class='header--title'>Accueil</h1>
+            <img class='header--info' src="assets/img/information.svg" alt="">
         </div>
+        <nav class='nav--mobile hidden'>
+            <img class='nav--logo' src="assets/img/logo.png" alt="">
+            <div class="nav--bloc">
+                <h3 class="nav--text">Ecole Simone Veil - IFS</h3>
+                <h2 class="nav--text--bold">PORTAIL FAMILLE</h2>
+                <h3 class="nav--text">Bonjour Madame/Monsieur <span class='nav--lastname'>X</span></h3>
+            </div>
+            <ul class="nav--lnks">
+                <li><a class="nav--lnk" href="">Accueil</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Périscolaire</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Facturation</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Compte</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Contact</a><span class="menu--arrow"></span></li>
+            </ul>
+        </nav>
+        <div class="fader--mobile hidden"></div>
+    </header>
 
-
-
+    <main>
 
     </main>
 
@@ -37,7 +47,7 @@
 
     </footer>
 
-    <script src="assets/js/script.js" async defer></script>
+    <script src="assets/js/index.js" async defer></script>
 </body>
 
 </html>
