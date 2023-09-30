@@ -5,6 +5,10 @@ body {
     overflow: hidden;
 }
 
+main {
+    width: 100vw;
+}
+
 .main--img {
     width: 100%;
 }
@@ -49,12 +53,12 @@ body {
 }
 
 .calendar--wrapper {
-    width: calc(200% - 1rem);
+    width: calc(100% - 1rem);
     height: 50vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     padding: .5rem;
-    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 
@@ -65,6 +69,7 @@ body {
 .work-help {
     border: solid 1px black;
     height: 10vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
