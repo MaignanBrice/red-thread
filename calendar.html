@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/style/reset.css">
+    <link rel="stylesheet" href="/assets/style/calendar.css">
+    <link rel="stylesheet" href="/assets/style/index.css">
+
+</head>
+
+<body>
+    <header>
+        <div class='header--mobile'>
+            <a href="#" id="burger-btn">
+                <span class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <h1 class='header--title'>Périscolaire</h1>
+            <img class='header--info' src="assets/img/information.svg" alt="">
+        </div>
+        <nav class='nav--mobile hidden'>
+            <img class='nav--logo' src="assets/img/logo.png" alt="">
+            <div class="nav--bloc">
+                <h3 class="nav--text">Ecole Simone Veil - IFS</h3>
+                <h2 class="nav--text--bold">PORTAIL FAMILLE</h2>
+                <h3 class="nav--text">Bonjour Madame/Monsieur <span class='nav--lastname'>X</span></h3>
+            </div>
+            <ul class="nav--lnks">
+                <li><a class="nav--lnk" href="">Accueil</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Périscolaire</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Facturation</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Compte</a><span class="menu--arrow"></span></li>
+                <li><a class="nav--lnk" href="">Contact</a><span class="menu--arrow"></span></li>
+            </ul>
+        </nav>
+        <div class="fader--mobile hidden"></div>
+    </header>
+
+    <main>
+        <section>
+            <img class='main--img' src="/assets/img/imageTuile.png" alt="">
+            <h2 class='main--text'>Vous pouvez déclarer une absence, réserver ou modifier une réservation. Aucune
+                modification ne sera prise en compte 48h avant échéance.</h2>
+        </section>
+        <section class='calendar--nav'>
+            <a class='calendar--left' href=""></a>
+            <div class="calendar--week"> Semaine <span>35</span></div>
+            <a class='calendar--right' href=""></a>
+        </section>
+        <section class='calendar--wrapper'>
+           <!-- Calendar Display -->
+        </section>
+        <section class="calendar--btns">
+            <button class='btn calendar--btn--confirm'>Confimer</button>
+            <button class="btn calendar--btn--cancel">Annuler</button>
+        </section>
+    </main>
+
+    <!-- Calendar Templates -->
+    
+    <template id='weekdays'>
+        <div class="weekdays" data-day-number="">
+            <span class="weekdays--day">Lun</span>
+            <span class='weekdays--date'>01</span>
+            <span class="weekdays--month">Sept.</span>
+        </div>
+    </template>
+
+    <template id='sitting-morning'>
+        <div class="sitting-morning" data-day-number="">
+            <span>Garderie</span>
+            <span class="sitting--time">7h15 / 8h45</span>
+        </div>
+    </template>
+
+    <template id="lunch">
+        <div class="lunch" data-day-number="">
+            <span>Repas Midi</span>
+            <span class='lunch--time'>12h / 13h30</span>
+        </div>
+    </template>
+
+    <template id="sitting-afternon">
+        <div class="sitting-afternoon" data-day-number="">
+            <span>Garderie</span>
+            <span class="sitting--time">16h30 / 18h30</span>
+        </div>
+    </template>
+
+    <template id="work-help">
+        <div class="work-help" data-day-number="">
+            <span>Aide aux Devoirs</span>
+            <span class="work--time">16h30 / 18h</span>
+        </div>
+    </template>
+
+    <script src="assets/js/calendar.js" async defer></script>
+</body>
+
+</html>

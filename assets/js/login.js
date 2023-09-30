@@ -7,6 +7,6 @@ localStorage.setItem('pwd', 'password');
 
 
 function checkPassword(value) {
-    if (value === localStorage.getItem('pwd')) window.location.href = "/index.html"
+    if (value === localStorage.getItem('pwd')) window.location.href = "../index.html"
 }
 
