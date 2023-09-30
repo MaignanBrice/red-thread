@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: 'century-reg';
-    src: url(/fonts/SansSerifFLF.otf);
+    src: url(../fonts/SansSerifFLF.otf);
 }
 
 @font-face {
     font-family: 'century-light';
-    src: url(/fonts/SansSerifBookFLF.otf);
+    src: url(../fonts/SansSerifBookFLF.otf);
 }
 
 @font-face {
     font-family: 'century-bold';
-    src: url(/fonts/SansSerifBldFLF.otf);
+    src: url(../fonts/SansSerifBldFLF.otf);
 }
 
 body {
@@ -51,7 +51,7 @@ header {
 }
 
 .nav--mobile {
-    background-image: url(/img/background-mobile-login.jpg);
+    background-image: url(../img/background-mobile-login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -119,7 +119,7 @@ header {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(/img/chevron-right.svg);
+    background-image: url(../img/chevron-right.svg);
 }
 
 .fader--mobile {
@@ -133,5 +133,5 @@ header {
 }
 
 .hidden {
-    display: none;
+    display: none;s
 }

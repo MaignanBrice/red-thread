@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'century-light';
-    src: url(/fonts/SansSerifBookFLF.otf);
+    src: url(../fonts/SansSerifBookFLF.otf);
 }
 
 body {
