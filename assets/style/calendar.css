@@ -36,11 +36,11 @@ main {
 }
 
 .calendar--left {
-    background-image: url(/assets/img/chevron-left.svg);
+    background-image: url(../assets/img/chevron-left.svg);
 }
 
 .calendar--right {
-    background-image: url(/assets/img/chevron-right.svg);
+    background-image: url(../assets/img/chevron-right.svg);
 }
 
 .calendar--week {
