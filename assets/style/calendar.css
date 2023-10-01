@@ -59,6 +59,7 @@ main {
     grid-template-columns: repeat(5, 1fr);
     padding: .5rem;
     overflow-x: scroll;
+    grid-gap: .2rem;
 }
 
 
@@ -68,11 +69,13 @@ main {
 .sitting-afternoon,
 .work-help {
     border: solid 1px black;
+    border-radius: 4px;
     height: 10vh;
     width: 30vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(79, 133, 181, 0.4);
 }
 
 .weekdays {
