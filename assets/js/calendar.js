@@ -1,5 +1,7 @@
 /* CALENDAR SCRIPT */
 
+let today = new Date
+
 displayWeekdays();
 displaySittingMorn();
 displayLunch();
@@ -7,6 +9,13 @@ displaySittingAfter();
 displayWorkhelp();
 
 
+
+/* Events */
+
+document.querySelector(".calendar--wrapper").addEventListener('click', (event) => {
+    if(!event.target.classList.contains('sitting-morning')) return;
+    event.target.classList.toggle('flip-top');
+})
 
 
 /* Template Display */
