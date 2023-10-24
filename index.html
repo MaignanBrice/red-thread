@@ -8,44 +8,71 @@
     <title>Portail Famille - Simone Veil</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/style/reset.css">
     <link rel="stylesheet" href="assets/style/index.css">
 </head>
 
 <body>
 
     <header>
-        <div class='header--mobile'>
-            <a href="#" id="burger-btn">
-                <span class="burger-icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </a>
-            <h1 class='header--title'>Accueil</h1>
-            <img class='header--info' src="assets/img/information.svg" alt="">
-        </div>
-        <nav class='nav--mobile hidden'>
-            <img class='nav--logo' src="assets/img/logo.png" alt="">
-            <div class="nav--bloc">
-                <h3 class="nav--text">Ecole Simone Veil - IFS</h3>
-                <h2 class="nav--text--bold">PORTAIL FAMILLE</h2>
-                <h3 class="nav--text">Bonjour Madame/Monsieur <span class='nav--lastname'>X</span></h3>
-            </div>
-            <ul class="nav--lnks">
-                <li><a class="nav--lnk" href="">Accueil</a><span class="menu--arrow"></span></li>
-                <li><a class="nav--lnk" href="">Périscolaire</a><span class="menu--arrow"></span></li>
-                <li><a class="nav--lnk" href="">Facturation</a><span class="menu--arrow"></span></li>
-                <li><a class="nav--lnk" href="">Compte</a><span class="menu--arrow"></span></li>
-                <li><a class="nav--lnk" href="">Contact</a><span class="menu--arrow"></span></li>
-            </ul>
+        <nav class="navbar">
+            <a href="#" class="navbar__bloc">
+                <img src="/assets/img/home.svg" alt="">
+                <span>Accueil</span>
+            </a>
+            <a href="#" class="navbar__bloc">
+                <img src="/assets/img/calendar-account-outline.svg" alt="">
+                <span>Calendrier</span>
+            </a>
+            <a href="#" class="navbar__bloc">
+                <img src="/assets/img/receipt-text.svg" alt="">
+                <span>Factures</span>
+            </a>
+            <a href="#" class="navbar__bloc">
+                <img src="/assets/img/account.svg" alt="">
+                <span>Compte</span>
+            </a>
         </nav>
-        <div class="fader--mobile hidden"></div>
+
     </header>
 
     <main>
+        <div class="welcome">
+            <h1>Bienvenue sur le portail Famille de l'école maternelle/élementaire Simone Veil - IFS</h1>
+            <h2>Famille MAIGNAN</h2>
+            <img src="/assets/img/imageTuile-removebg-preview.png" alt="">
+        </div>
+        <div class="child__dropdown">
+            <input type="checkbox" id="dropdown">
+            <label class="dropdown__face" for="dropdown">
+                <div class="dropdown__text">Selectionner un enfant</div>
+                <div class="dropdown__arrow"></div>
+            </label>
+            <ul class="dropdown__items">
+                <li>Gabriel MAIGNAN - P. Section</li>
+                <li>Lyana MAIGNAN - P. Section</li>
+            </ul>
+        </div>
 
+        <h2 class="title">Actualité de l'école</h2>
+
+        <section class="article">
+            <img class="article__img" src="/assets/img/sustainable.jpg" alt=''>
+            <div class="article__container">
+                <div class="article__tag">Soirée</div>
+                <h3>Fête d'halloween</h3>
+                <h4>31 Octobre 2023</h4>
+                <p>Venez profiter avec vos enfants de la soirée Halloween organisée par l'école...</p>
+            </div>
+        </section>
+        <section class="article">
+            <img class="article__img" src="/assets/img/sustainable.jpg" alt=''>
+            <div class="article__container">
+                <div class="article__tag">Réunion</div>
+                <h3>Reunion Parents d'Elève</h3>
+                <h4>12 Novembre 2023</h4>
+                <p>Nous vous attendons à la 2ème Assemblée Générale des Parents d'Elèves, en salle Polyvalente...</p>
+            </div>
+        </section>
     </main>
 
     <footer>
