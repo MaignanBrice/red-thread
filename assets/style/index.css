@@ -165,9 +165,13 @@ body {
     align-items: center;
     font-family: 'century-reg', Arial, Helvetica, sans-serif;
     height: calc(94vh - 1rem);
-    background-color: #FFFDFA;
+    background-color: #FFFDDD;
     overflow: hidden;
     overflow: scroll;
+}
+
+header {
+    width: 100%;
 }
 
 main {
@@ -191,8 +195,8 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: solid black .1rem;
-    border-radius: .5rem;
+    /*   border-top: solid black .1rem;
+    border-radius: .5rem; */
 }
 
 .navbar__bloc {
@@ -215,8 +219,8 @@ main {
     height: 20vh;
     width: calc(100% - 2rem);
     background-color: #B2CE3C;
-    border-bottom-left-radius: 1.2rem;
-    border-bottom-right-radius: 1.2rem;
+    /*     border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem; */
     padding: 2rem 1rem;
 }
 
@@ -227,8 +231,11 @@ main {
 
 .welcome img {
     position: absolute;
-    bottom: 0;
+    left: 0;
     right: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 100vw;
     max-height: 80%;
     max-width: 500px;
@@ -253,7 +260,7 @@ h2 {
 
 .dropdown__face,
 .dropdown__items {
-    background-color: #fff;
+    background-color: #FFFDDD;
     padding: 1rem;
     border-radius: 25px;
     border: solid black .1rem;
@@ -336,6 +343,7 @@ h2 {
 .article__container {
     padding: .5rem;
     height: 80%;
+    overflow: clip;
 }
 
 .article__container button {
@@ -354,6 +362,14 @@ h2 {
     font-size: .7rem;
     margin-bottom: .8rem;
     text-decoration: underline;
+}
+
+.article__tag {
+    padding: .2rem;
+    width: fit-content;
+    border: solid .1rem black;
+    border-radius: .5rem;
+    float: right;
 }
 
 .article__container p,
